@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+img {
+  width: 450px;
+  height: 675px;
+  -webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  height: 100vh;
+  position: absolute;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  overflow-y: auto;
+  overflow: overlay;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#item {
+  /* height: 100vh; */
+  background-color: transparent;
+  transition: background-color 300ms linear;
+  scroll-snap-align: start;
+  overflow-y: auto;
+  overflow: overlay;
+  scroll-snap-type: y mandatory;
+  background-color: hsl(324, 43%, 85%);
+}
+
+.panel {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  scroll-snap-align: start;
+  background-color: transparent;
+  transition: background-color 300ms linear;
 }
 
-.App-link {
-  color: #61dafb;
+.image1 {
+  background-color: hsl(324, 43%, 85%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image1::selection {
+  background: hsl(324, 43%, 85%);
+}
+
+.image2 {
+  background-color: hsl(207, 71%, 88%);
+}
+
+.image2::selection {
+  background: hsl(207, 71%, 88%);
+}
+
+.image3 {
+  background-color: hsl(357, 62%, 52%);
+}
+
+.image3::selection {
+  background: hsl(357, 62%, 52%);
 }

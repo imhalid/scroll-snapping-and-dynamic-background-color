@@ -1,0 +1,13 @@
+.links {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 0 5px #0002003f;
+}
