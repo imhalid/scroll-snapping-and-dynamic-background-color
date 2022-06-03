@@ -3,4 +3,16 @@
   bottom: 10px;
   left: 10px;
   width: 360px;
+  transition: filter 0.5s;
+
+  filter: blur(0px);
+}
+
+.about:hover {
+  filter: blur(1px);
+}
+
+p::selection {
+  color: white;
+  background-color: rgb(0, 0, 0);
 }
