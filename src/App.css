@@ -13,7 +13,7 @@ img {
 
 body {
   overflow-y: auto;
-  overflow: overlay;
+  overflow: hidden;
 }
 
 #item {

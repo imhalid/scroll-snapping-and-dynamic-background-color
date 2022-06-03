@@ -5,11 +5,11 @@
   width: 360px;
   transition: filter 0.5s;
 
-  filter: blur(0px);
+  filter: blur(3px);
 }
 
 .about:hover {
-  filter: blur(1px);
+  filter: blur(0px);
 }
 
 p::selection {
